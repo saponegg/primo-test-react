@@ -4,12 +4,9 @@ import Primo from "./Primo";
 import Componente1 from "./Componente1";
 import Prodotto from "./Product"; //posso dargli il nome che voglio io nel primo parametro
 import Passaggio from "./Passaggio_valori";
+import oggetto1 from "./Oggetti.js"; // questo mi serve per importare gli oggetti che poi uso con passaggio
 
-const oggetto1={
-  nome:"marco",
-  cognome:"peppe",
-  anni:25
-  };
+
 
 export default function App() {
   return (
@@ -27,6 +24,7 @@ export default function App() {
       <p> Qui ripeto la stessa cosa fatta sopra ma con una sintassi diversa e più compatta  ovvero utilizzando lo spread operator</p>
       <Passaggio {... oggetto1}
       />
+      
 
     </div>
 
